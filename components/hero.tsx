@@ -1,12 +1,15 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 navy-gradient opacity-5 dark:opacity-10"></div>
 
@@ -41,8 +44,9 @@ export function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto"
           >
-            Crafting scalable software solutions with 4+ years of experience in enterprise web applications,
-            microservices architecture, and modern full-stack development.
+            Crafting scalable software solutions with 4+ years of experience in
+            enterprise web applications, microservices architecture, and modern
+            full-stack development.
           </motion.p>
 
           <motion.div
@@ -54,7 +58,11 @@ export function Hero() {
             <Button
               size="lg"
               className="bg-navy-600 hover:bg-navy-700 text-white px-8 py-3"
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Get In Touch
             </Button>
@@ -62,7 +70,11 @@ export function Hero() {
               variant="outline"
               size="lg"
               className="border-navy-600 text-navy-600 hover:bg-navy-50 dark:hover:bg-navy-900 px-8 py-3 bg-transparent"
-              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               View My Work
             </Button>
@@ -94,7 +106,7 @@ export function Hero() {
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.2, rotate: 5 }}
-              href="mailto:ali@hemmatnia.com"
+              href="mailto:ali.hemmatnia@gmail.com"
               className="text-muted-foreground hover:text-navy-600 dark:hover:text-gold-400 transition-colors"
             >
               <Mail className="h-6 w-6" />
@@ -112,12 +124,16 @@ export function Hero() {
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
             className="cursor-pointer"
-            onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() =>
+              document
+                .getElementById("about")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
           >
             <ArrowDown className="h-6 w-6 text-muted-foreground" />
           </motion.div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

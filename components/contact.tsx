@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Linkedin, Github, Send } from "lucide-react"
+import { motion } from "framer-motion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Mail, MapPin, Linkedin, Github, Send } from "lucide-react";
 
 export function Contact() {
   return (
@@ -18,7 +18,9 @@ export function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+            Get In Touch
+          </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Let's discuss your next project or collaboration opportunity
           </p>
@@ -34,10 +36,14 @@ export function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-navy-700 dark:text-gold-400">Let's Connect</h3>
+              <h3 className="text-2xl font-bold mb-6 text-navy-700 dark:text-gold-400">
+                Let's Connect
+              </h3>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                I'm always interested in discussing new opportunities, innovative projects, and collaborations. Whether
-                you have a project in mind or just want to chat about technology, feel free to reach out!
+                I'm always interested in discussing new opportunities,
+                innovative projects, and collaborations. Whether you have a
+                project in mind or just want to chat about technology, feel free
+                to reach out!
               </p>
             </div>
 
@@ -51,10 +57,10 @@ export function Contact() {
                     <div>
                       <h4 className="font-semibold">Email</h4>
                       <a
-                        href="mailto:ali@hemmatnia.com"
+                        href="mailto:ali.hemmatnia@gmail.com"
                         className="text-muted-foreground hover:text-navy-600 dark:hover:text-gold-400 transition-colors"
                       >
-                        ali@hemmatnia.com
+                        ali.hemmatnia@gmail.com
                       </a>
                     </div>
                   </div>
@@ -84,7 +90,9 @@ export function Contact() {
                   className="flex items-center space-x-2 p-4 bg-navy-100 dark:bg-navy-900 rounded-lg hover:bg-navy-200 dark:hover:bg-navy-800 transition-colors"
                 >
                   <Linkedin className="h-5 w-5 text-navy-600 dark:text-gold-400" />
-                  <span className="text-navy-600 dark:text-gold-400 font-medium">LinkedIn</span>
+                  <span className="text-navy-600 dark:text-gold-400 font-medium">
+                    LinkedIn
+                  </span>
                 </motion.a>
 
                 <motion.a
@@ -95,7 +103,9 @@ export function Contact() {
                   className="flex items-center space-x-2 p-4 bg-navy-100 dark:bg-navy-900 rounded-lg hover:bg-navy-200 dark:hover:bg-navy-800 transition-colors"
                 >
                   <Github className="h-5 w-5 text-navy-600 dark:text-gold-400" />
-                  <span className="text-navy-600 dark:text-gold-400 font-medium">GitHub</span>
+                  <span className="text-navy-600 dark:text-gold-400 font-medium">
+                    GitHub
+                  </span>
                 </motion.a>
               </div>
             </div>
@@ -110,13 +120,18 @@ export function Contact() {
           >
             <Card className="border-navy-200 dark:border-navy-800">
               <CardHeader>
-                <CardTitle className="text-2xl text-navy-700 dark:text-gold-400">Send a Message</CardTitle>
+                <CardTitle className="text-2xl text-navy-700 dark:text-gold-400">
+                  Send a Message
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium mb-2">
+                      <label
+                        htmlFor="name"
+                        className="block text-sm font-medium mb-2"
+                      >
                         Name
                       </label>
                       <Input
@@ -126,7 +141,10 @@ export function Contact() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium mb-2"
+                      >
                         Email
                       </label>
                       <Input
@@ -139,7 +157,10 @@ export function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="subject"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Subject
                     </label>
                     <Input
@@ -150,7 +171,10 @@ export function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Message
                     </label>
                     <Textarea
@@ -161,7 +185,10 @@ export function Contact() {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full bg-navy-600 hover:bg-navy-700 text-white">
+                  <Button
+                    type="submit"
+                    className="w-full bg-navy-600 hover:bg-navy-700 text-white"
+                  >
                     <Send className="h-4 w-4 mr-2" />
                     Send Message
                   </Button>
@@ -172,5 +199,5 @@ export function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

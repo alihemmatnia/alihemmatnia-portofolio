@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Calendar, GraduationCap } from "lucide-react"
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { MapPin, Calendar, GraduationCap } from "lucide-react";
 
 export function About() {
   return (
@@ -15,9 +15,12 @@ export function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+            About Me
+          </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate about creating robust, scalable solutions that make a difference
+            Passionate about creating robust, scalable solutions that make a
+            difference
           </p>
         </motion.div>
 
@@ -30,20 +33,23 @@ export function About() {
           >
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate Full-Stack Developer and .NET Engineer with over 4 years of experience in designing and
-                deploying scalable software solutions. Currently based in Urmia, Iran, I specialize in enterprise web
-                applications and modern development practices.
+                I'm a passionate Full-Stack Developer and .NET Engineer with
+                over 4 years of experience in designing and deploying scalable
+                software solutions. Currently based in Urmia, Iran, I specialize
+                in enterprise web applications and modern development practices.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                At Etraab Holding, I've contributed to major projects including advanced ERP systems and contact-center
-                platforms, utilizing cutting-edge technologies like ASP.NET Core, React, microservices architecture, and
-                containerization with Docker.
+                At Etraab Holding, I've contributed to major projects including
+                advanced ERP systems and contact-center platforms, utilizing
+                cutting-edge technologies like ASP.NET Core, React,
+                microservices architecture, and containerization with Docker.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm passionate about solving complex system challenges, optimizing performance, and staying up-to-date
-                with the latest technologies in the ever-evolving world of software development.
+                I'm passionate about solving complex system challenges,
+                optimizing performance, and staying up-to-date with the latest
+                technologies in the ever-evolving world of software development.
               </p>
             </div>
           </motion.div>
@@ -77,7 +83,9 @@ export function About() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Experience</h3>
-                    <p className="text-muted-foreground">4+ Years in Software Development</p>
+                    <p className="text-muted-foreground">
+                      4+ Years in Software Development
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -91,8 +99,10 @@ export function About() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Education</h3>
-                    <p className="text-muted-foreground">Islamic Azad University, Urmia</p>
-                    <p className="text-sm text-muted-foreground">Graphic Design</p>
+                    <p className="text-muted-foreground">
+                      Islamic Azad University, Urmia
+                    </p>
+                    <p className="text-sm text-muted-foreground">Computer</p>
                   </div>
                 </div>
               </CardContent>
@@ -101,5 +111,5 @@ export function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
